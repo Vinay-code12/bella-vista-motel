@@ -1,0 +1,505 @@
+{
+  "apartment-bathroom-1": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#a8a8a8"
+  },
+  "apartment-bathroom-2": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#b8b8a8"
+  },
+  "apartment-bedroom": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#a8a8a8"
+  },
+  "apartment-dining": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#a8a8a8"
+  },
+  "apartment-lounge-1": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#d8c8c8"
+  },
+  "apartment-lounge-2": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#d8d8d8"
+  },
+  "apartment-lounge-3": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#988878"
+  },
+  "attr-art-galleries": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#181818"
+  },
+  "attr-beaches": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#88b8e8"
+  },
+  "attr-brisbane-water-cruises": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#5898d8"
+  },
+  "attr-bushwalking": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#080808"
+  },
+  "attr-central-coast-tourism": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#185878"
+  },
+  "attr-glenworth-valley": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#283828"
+  },
+  "attr-golf": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#284808"
+  },
+  "attr-gosford-cbd": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#f8f8f8"
+  },
+  "attr-gosford-race-club": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#485828"
+  },
+  "attr-henry-kendall-cottage": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#080808"
+  },
+  "attr-japanese-gardens": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#e8e8f8"
+  },
+  "attr-linton-gardens": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#080808"
+  },
+  "attr-mount-penang": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#78a848"
+  },
+  "attr-palm-beach-ferry": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#3888c8"
+  },
+  "attr-reptile-park": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#080808"
+  },
+  "attr-somersby-falls": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#484838"
+  },
+  "attr-somersby-gardens": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#282828"
+  },
+  "attr-stadium": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#88a848"
+  },
+  "attr-tree-tops": {
+    "width": 550,
+    "height": 314,
+    "widths": [
+      480,
+      550
+    ],
+    "color": "#f8f8f8"
+  },
+  "attr-waterfall-cafe": {
+    "width": 426,
+    "height": 268,
+    "widths": [
+      426
+    ],
+    "color": "#f8f8f8"
+  },
+  "bathroom": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#787868"
+  },
+  "dining-setting": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#f8f8f8"
+  },
+  "double-1": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8c8"
+  },
+  "double-2": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8c8"
+  },
+  "double-3": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8c8"
+  },
+  "exterior-courtyard": {
+    "width": 1600,
+    "height": 955,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "color": "#b8a898"
+  },
+  "exterior-highway": {
+    "width": 1920,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ],
+    "color": "#685858"
+  },
+  "exterior-reception": {
+    "width": 1920,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1920
+    ],
+    "color": "#181818"
+  },
+  "exterior-street": {
+    "width": 1024,
+    "height": 555,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#88a8d8"
+  },
+  "exterior-wing": {
+    "width": 558,
+    "height": 419,
+    "widths": [
+      480,
+      558
+    ],
+    "color": "#d8d8d8"
+  },
+  "garden-bbq": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#f8f8f8"
+  },
+  "garden-lawn": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#181818"
+  },
+  "kitchen": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8d8d8"
+  },
+  "kitchenette": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8c8"
+  },
+  "pool": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#080808"
+  },
+  "quad-1": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8b8"
+  },
+  "quad-2": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#b8b8a8"
+  },
+  "reception": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#f8f8f8"
+  },
+  "room-a": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8c8c8"
+  },
+  "room-b": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8b8a8"
+  },
+  "room-c": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#b8b8a8"
+  },
+  "room-desk": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#d8d8d8"
+  },
+  "twin-1": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#f8f8f8"
+  },
+  "twin-2": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#d8d8c8"
+  },
+  "view-water": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      480,
+      800,
+      1024
+    ],
+    "color": "#c8d8e8"
+  }
+}

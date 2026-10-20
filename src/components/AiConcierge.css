@@ -1,0 +1,141 @@
+.concierge__grid {
+  display: grid;
+  gap: clamp(2.5rem, 2rem + 3vw, 5rem);
+  align-items: center;
+}
+
+/* Arched portrait with an offset brass outline (layered, like the intro images). */
+.concierge__visual {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 400px);
+  isolation: isolate;
+}
+
+.concierge__visual::before {
+  content: '';
+  position: absolute;
+  inset: 0.9rem -0.6rem -0.9rem 0.6rem;
+  z-index: -1;
+  border: 1px solid var(--brass);
+  border-radius: 999px 999px 0 0;
+}
+
+.concierge__arch {
+  aspect-ratio: 5 / 6;
+  overflow: hidden;
+  border-radius: 999px 999px 0 0;
+  background: var(--sand);
+  box-shadow: var(--shadow);
+}
+
+.concierge__arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+.concierge__badge {
+  position: absolute;
+  left: -0.75rem;
+  bottom: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--forest);
+  color: var(--on-dark);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow);
+}
+
+.concierge__dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8fc49a;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .concierge__dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: inherit;
+    animation: concierge-pulse 2.4s var(--ease) infinite;
+  }
+}
+
+@keyframes concierge-pulse {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.6);
+  }
+}
+
+.concierge__text h2 {
+  margin-top: 1.25rem;
+  max-width: 12ch;
+}
+
+.concierge__text .lead {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+}
+
+.concierge__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.concierge__actions .btn[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.concierge__error {
+  max-width: 34rem;
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.1rem;
+  background: #f6e6df;
+  border-left: 2px solid var(--danger);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.concierge__note {
+  max-width: 34rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+@media (min-width: 900px) {
+  .concierge__visual::before {
+    inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  }
+
+  .concierge__grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+}
+
+/* The floating widget sits bottom-right on the Home page; keep the footer's last line clear of it. */
+.has-concierge .footer__base {
+  padding-bottom: 8rem;
+}

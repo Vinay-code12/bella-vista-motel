@@ -1,0 +1,159 @@
+.accom-qualifier {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-3);
+}
+
+.accom-tools {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+}
+
+.room-index ol {
+  display: grid;
+  border-top: 1px solid var(--line-strong);
+}
+
+.room-index a {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition:
+    color 0.3s var(--ease),
+    padding 0.3s var(--ease);
+}
+
+.room-index a span {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  color: var(--brass-text);
+}
+
+.room-index a:hover {
+  color: var(--olive);
+  padding-left: 0.4rem;
+}
+
+@media (min-width: 1080px) {
+  .accom-tools {
+    grid-template-columns: 0.75fr 1.6fr;
+    align-items: start;
+  }
+
+  .accom-tools .booking__fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .accom-tools .booking__submit {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .accom-tools .booking__fields {
+    grid-template-columns: 1.15fr 1.15fr 0.75fr 0.75fr;
+  }
+}
+
+/* Policy */
+.policy {
+  background: var(--sand);
+}
+
+.policy:focus {
+  outline: none;
+}
+
+.policy__head h2 {
+  margin-top: 1.25rem;
+}
+
+.policy__times {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+  border-block: 1px solid var(--line-strong);
+}
+
+.policy__times > div {
+  padding: 1.5rem 1rem 1.5rem 0;
+}
+
+.policy__times > div + div {
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--line);
+}
+
+.policy__times dt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brass-text);
+}
+
+.policy__times dd {
+  margin-top: 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 1.6rem + 3vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.policy__grid {
+  display: grid;
+  gap: 2.25rem 3rem;
+}
+
+.policy__group h3 {
+  padding-bottom: 0.85rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line-strong);
+  font-size: 1.5rem;
+}
+
+.policy__group ul {
+  display: grid;
+  gap: 0.7rem;
+  color: var(--ink-2);
+}
+
+.policy__group li {
+  position: relative;
+  padding-left: 1.1rem;
+  line-height: 1.55;
+}
+
+.policy__group li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 5px;
+  height: 5px;
+  background: var(--brass);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 760px) {
+  .policy__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
+  .policy__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,40 @@
+.site-notice {
+  background: var(--sand);
+  color: var(--ink);
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-notice__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 44px;
+}
+
+.site-notice p {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.85rem;
+  padding-block: 0.6rem;
+}
+
+.site-notice__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass-text);
+}
+
+.site-notice button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -12px;
+  border: 0;
+  background: none;
+}

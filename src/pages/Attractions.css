@@ -1,0 +1,205 @@
+.attr-intro {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.attr-intro h2 {
+  margin-top: 1.25rem;
+  max-width: 10ch;
+}
+
+.attr-index {
+  columns: 1;
+  column-gap: 2.5rem;
+  border-top: 1px solid var(--line-strong);
+}
+
+.attr-index li {
+  break-inside: avoid;
+}
+
+.attr-index a {
+  display: flex;
+  gap: 0.9rem;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  line-height: 1.35;
+  transition: color 0.25s var(--ease);
+}
+
+.attr-index a span {
+  flex: none;
+  min-width: 1.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--brass-text);
+}
+
+.attr-index a:hover {
+  color: var(--olive);
+}
+
+@media (min-width: 640px) {
+  .attr-index {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1080px) {
+  .attr-intro {
+    grid-template-columns: 0.8fr 2fr;
+    align-items: start;
+  }
+
+  .attr-index {
+    columns: 3;
+  }
+}
+
+/* Image grid — native 550px photos are never shown wider than ~420px. */
+.attr-grid-wrap {
+  padding-bottom: var(--section);
+}
+
+.attr-grid {
+  display: grid;
+  gap: 3rem 1.5rem;
+}
+
+.attr-grid > li:focus {
+  outline: none;
+}
+
+.attr-grid > li:focus-visible .attr-card {
+  outline: 2px solid var(--brass-text);
+  outline-offset: 6px;
+}
+
+.attr-card {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+}
+
+.attr-card__media {
+  aspect-ratio: 550 / 314;
+}
+
+.attr-card__body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  align-items: baseline;
+}
+
+.attr-card__num {
+  grid-row: span 2;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--brass-text);
+}
+
+.attr-card h3 {
+  font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.75rem);
+}
+
+.attr-card h3 a {
+  text-decoration: none;
+}
+
+/* Stretch the title link over the whole card. */
+.attr-card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.attr-card--linked:hover h3 a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.attr-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.attr-card__link .icon {
+  transition: transform 0.3s var(--ease);
+}
+
+.attr-card--linked:hover .attr-card__link .icon {
+  transform: translate(2px, -2px);
+}
+
+@media (min-width: 640px) {
+  .attr-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .attr-grid > li:nth-child(even) {
+    transform: translateY(3.5rem);
+  }
+
+  .attr-grid {
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .attr-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: clamp(1.5rem, 3vw, 3.5rem);
+    row-gap: 4.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .attr-grid > li:nth-child(even) {
+    transform: none;
+  }
+
+  .attr-grid > li:nth-child(3n + 2) {
+    transform: translateY(5rem);
+  }
+}
+
+/* Getting here */
+.getting-here {
+  background: var(--sand);
+}
+
+.getting-here__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.getting-here h2 {
+  margin-top: 1.25rem;
+  max-width: 14ch;
+}
+
+.getting-here__media {
+  aspect-ratio: 1024 / 555;
+}
+
+.getting-here:focus {
+  outline: none;
+}
+
+@media (min-width: 1080px) {
+  .getting-here__grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+  }
+}

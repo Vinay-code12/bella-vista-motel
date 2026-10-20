@@ -1,0 +1,149 @@
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.crumbs li + li::before {
+  content: '/';
+  margin-right: 0.5rem;
+  color: var(--brass);
+}
+
+.crumbs a {
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  text-decoration: underline;
+}
+
+.crumbs [aria-current] {
+  color: var(--ink);
+}
+
+/* Split + type */
+.page-hero--split,
+.page-hero--type {
+  padding-block: clamp(2.5rem, 1.5rem + 5vw, 6.5rem) clamp(3rem, 2rem + 4vw, 6rem);
+}
+
+.page-hero__grid {
+  display: grid;
+  gap: clamp(2rem, 1rem + 4vw, 5rem);
+  align-items: end;
+}
+
+.page-hero__text {
+  min-width: 0;
+  container-type: inline-size;
+}
+
+/* Long single words ("Accommodation") must fit their column: cap by container width. */
+.page-hero h1 {
+  font-size: clamp(2.75rem, 1.3rem + 6.6vw, 8.75rem);
+  font-size: min(clamp(2.75rem, 1.3rem + 6.6vw, 8.75rem), 13.5cqi);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-top: 1.1rem;
+  overflow-wrap: normal;
+}
+
+.page-hero__intro {
+  max-width: 36rem;
+  margin-top: 1.75rem;
+}
+
+.page-hero__visual {
+  position: relative;
+}
+
+.page-hero__frame {
+  aspect-ratio: 4 / 3;
+}
+
+.page-hero__inset {
+  position: absolute;
+  left: -2%;
+  bottom: -12%;
+  width: 38%;
+  aspect-ratio: 3 / 4;
+  border: 6px solid var(--ivory);
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 1080px) {
+  .page-hero--split .page-hero__grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+
+  .page-hero__frame {
+    aspect-ratio: 5 / 4;
+  }
+
+  .page-hero__inset {
+    left: -18%;
+  }
+}
+
+@media (max-width: 639px) {
+  .page-hero__inset {
+    display: none;
+  }
+}
+
+/* Full-bleed */
+.page-hero--full {
+  position: relative;
+  display: grid;
+  min-height: clamp(460px, 78svh, 820px);
+  isolation: isolate;
+}
+
+.page-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.page-hero__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(20 26 21 / 0.15) 0%, rgb(20 26 21 / 0.1) 35%, rgb(20 26 21 / 0.78) 100%);
+}
+
+.page-hero__content {
+  align-self: end;
+  padding-block: 6rem clamp(2.5rem, 2rem + 3vw, 5rem);
+}
+
+.page-hero--full .crumbs ol,
+.page-hero--full .crumbs [aria-current] {
+  color: var(--on-dark);
+}
+
+.page-hero--full .page-hero__intro {
+  max-width: 40rem;
+  font-size: var(--fs-lead);
+  color: var(--on-dark);
+}
+
+/* Gentle parallax where scroll-driven animations are supported. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .page-hero__media img {
+      animation: hero-parallax linear both;
+      animation-timeline: view();
+      animation-range: exit 0% exit 100%;
+    }
+  }
+}
